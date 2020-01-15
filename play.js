@@ -2,8 +2,10 @@
 const { connect } = require('./client');
 const { setupInput } = require('./input');
 console.log('Connecting......')
-connect();
-setupInput();
+const result = connect();
+setupInput(result);
+// do I call setupInput on the connect object?
+// module.exports = { connect };
 
 // const setupInput = function (){
 //   const stdin = process.stdin;
