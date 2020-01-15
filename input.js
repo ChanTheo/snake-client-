@@ -29,6 +29,13 @@ const handleUserInput = function (input){
   if (input == 'd'){
     connection.write('Move: right')
   }
+  if (input == 'p'){
+    connection.write('Say: I win')
+  }
+  if (input == 'l'){
+    connection.write('Say: you lose')
+  }
+
 
 }
 const stdin = setupInput();
